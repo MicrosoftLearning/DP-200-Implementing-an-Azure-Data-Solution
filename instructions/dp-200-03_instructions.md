@@ -175,25 +175,25 @@ The main tasks for this exercise are as follows:
 
 1. In the **Overview** blade, click on **App registrations**.
 
-1. In the **App registrations** screen, click on the **+ New application registration** button.
+1. In the **App registrations** screen, click on the **+ New registration** button.
 
-1. Provide the **name** of **DLAccess** and **URL** of **https://adventureworks.org/exampleapp** for the application. Select **Web app / API** for the type of application you want to create. After setting the values, select **Create**. The DLAccess screen will appear. 
+1. Provide the **name** of **DLAccess** and **URL** of **https://adventureworks.org/exampleapp** for the application. Select **Web** for the **Redirect URI**. After setting the values, select **Register**. The DLAccess screen will appear.
 
 1. In the **DLAccess** registered app screen, copy the **Application ID** and paste it into Notepad.
 
-1. In the **DLAccess** registered app screen, click on the **Settings** button, and then click on the **Keys** option.
+1. In the **DLAccess** registered app screen, click on the **Certificates & secrets** button, and then click on the **New client secret** option.
 
-1. Provide a **description** of **DL Access Key**, and a **duration** of **In 1 year** for the key. When done, click **Save**.
+1. Provide a **description** of **DL Access Key**, and a **duration** of **In 1 year** for the key. When done, click **Add**.
 
-    >**Important**: When you click on Save, the key will appear. You only have one opportunity to copy this key value
+    >**Important**: When you click on **Add**, the key will appear. You only have one opportunity to copy this key value
 
-1. Copy the **Application key value** and paste it into Notepad
+1. Copy the **Application Client secret** and paste it into Notepad
 
 1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Resource groups** blade, click on the resource group **awrgstudxx**, where **xx** are your initials.
 
 1. In the **awrgstudxx** blade, click on **Access Control (IAM)** 
 
-1. Under **Add a role assignment** click **Add**.
+1. Click **Add** then **Add a role assignment**.
 
 1. In the **Add role assignment** screen, under Role, select **Storage Blob Data Contributor**.
 
@@ -223,9 +223,11 @@ The main tasks for this exercise are as follows:
 
 1. Ensure that the Cluster states the name of the cluster that you have created earlier, click on **Create**
 
+     > **Note**: If you do not see a Cluster in the options you're cluster may have stopped. Go back to your cluster screen and click on Start
+
      > **Note**: This will open up a Notebook with the title My Notebook (Scala).
 
-1. In the Notebook, in the cell  **Cmd 1**, copy the following code and paster it into the cell:
+1. In the Notebook, in the cell  **Cmd 1**, copy the following code and paste it into the cell:
 
     ```scala
     //Connect to Azure Data Lake Storage Gen2 account
@@ -233,11 +235,11 @@ The main tasks for this exercise are as follows:
     spark.conf.set("fs.azure.account.auth.type", "OAuth")
     spark.conf.set("fs.azure.account.oauth.provider.type", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
     spark.conf.set("fs.azure.account.oauth2.client.id.<storage-account-name>.dfs.core.windows.net", "<application-id>")
-    spark.conf.set("fs.azure.account.oauth2.client.secret.<storage-account-name>.dfs.core.windows.net", "<authentication-key>")
-    spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account-name>.dfs.core.windows.net", "https://login.microsoftonline.com/<tenant-id>/oauth2/token")
+    spark.conf.set("fs.azure.account.oauth2.client.secret.<storage-account-name>.dfs.core.windows.net", "<application-client-secret>")
+    spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account-name>.dfs.core.windows.net", "https://login.microsoftonline.com/<directory-id>/oauth2/token")
     ```
 
-1. In this code block, replace the **application-id**, **authentication-id**, **tenant-id**, **file-system-name** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
+1. In this code block, replace the **application-id**, **application-client-secret**, **directory-id** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
 
 1. In the Notebook, in the cell under **Cmd 1**, click on the **Run** icon and click on **Run Cell**. 
 
@@ -254,6 +256,8 @@ The main tasks for this exercise are as follows:
 
     val df = spark.read.json("abfss://<file-system-name>@<storage-account-name>.dfs.core.windows.net/preferences.json")
     ```
+
+    >**Note** If this takes more than a couple of minutes. Click cancel and check that you have  replaced the correct application id anf application client secret.
 
 1. In this code block, replace the **file-system-name** with the word **data** and **storage-account-name** placeholder values in this code block with the value that you collected earlier and are held in notepad.
 
