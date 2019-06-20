@@ -257,7 +257,7 @@ The main tasks for this exercise are as follows:
     val df = spark.read.json("abfss://<file-system-name>@<storage-account-name>.dfs.core.windows.net/preferences.json")
     ```
 
-    >**Note** If this takes more than a couple of minutes. Click cancel and check that you have  replaced the correct application id anf application client secret.
+    >**Note** If this takes more than a couple of minutes. Click cancel and check that you have  replaced the correct application id and application client secret.
 
 1. In this code block, replace the **file-system-name** with the word **data** and **storage-account-name** placeholder values in this code block with the value that you collected earlier and are held in notepad.
 
