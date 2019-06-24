@@ -95,29 +95,29 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the **awcdbstudxx - Quick start** screen, click on the **Overview** option in the blade
 
-1. In the **awcdbstudxx** screen, click **+ Add Collection**. This opens up **Data Explorer** with the **Add Collection** screen.
+1. In the **awcdbstudxx** screen, click **+ Add Container**. This opens up **Data Explorer** with the **Add Container** screen.
 
 1. In the **Add Collection** screen, create a Products database with a collection named Clothing with the following settings:
 
     - Database id: **Products**
 
-    - Subscription:  **Clothing**
+    - Container ID:  **Clothing**
 
     - Partition key: **/productId**
 
     - Leave the remaining options with their default values
 
-1.In the **Add Collection** screen, click **OK**
+1. In the **Add Container** screen, click **OK**
 
 ### Task 2: Add data using the portal
 
-1. In the **awcdbstudcto - Data Explorer** screen, on the Data Explorer toolbar, opposite the button for New Collection, click on the th **Open Full Screen** button. In the Open Full Screen dialog box, click **Open**. A new tab opens up in Microsoft Edge.
+1. In the **awcdbstudcto - Data Explorer** screen, on the Data Explorer toolbar, opposite the button for New Container, click on the th **Open Full Screen** button. In the Open Full Screen dialog box, click **Open**. A new tab opens up in Microsoft Edge.
 
-1. In the **SQL API** pane, expand **Clothing** and click on **Documents**. A new document appears with a sample JSON that you will now replace.
+1. In the **SQL API** pane, expand **Clothing** and click on **Items**. 
 
-1. In the Documents pane, click on the icon for **New Document**.
+1. In the Data Explorer pane, click on the icon for **New Item**.
 
-1. Copy the following code and paste it into the **Documents** tab:
+1. Copy the following code and paste it into the **Items** tab:
 
     ```JSON
     {
@@ -138,11 +138,11 @@ The main tasks for this exercise are as follows:
     }
     ```
 
-1. Once you've added the JSON to the Documents tab, click **Save**.
+1. Once you've added the JSON to the Items tab, click **Save**.
 
-1. In the Documents pane, click on the icon for **New Document**.
+1. In the Data Explorer pane, click on the icon for **New Item**.
 
-1. Copy the following code and paste it into the **Documents** tab:
+1. Copy the following code and paste it into the **Items** tab:
 
     ```JSON
     {
@@ -163,13 +163,13 @@ The main tasks for this exercise are as follows:
     }
     ```
 
-1. Once you've added the JSON to the Documents tab, click **Save**.
+1. Once you've added the JSON to the Items tab, click **Save**.
 
-1. You can see each document that has been saved by clicking each document on the left-hand menu.
+1. You can see each item that has been saved by clicking each item on the left-hand menu.
 
 ### Task 3: Run queries in the Azure portal.
 
-1. In the Azure portal, in the **documents** screen, click on the button **New SQL Query**.
+1. In the Azure portal, in the **Data Explorer** screen, click on the **Clothing** Database, click on the button **New SQL Query**.
 
     > **Note**: A Query 1 screen appears which shows the query **SELECT * FROM c** .
 
@@ -259,7 +259,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 4: Run complex operations on your data
 
-1. In the Azure portal, in the **documents** screen, click on the button **New Stored Procedure**.
+1. In the Azure portal, in the **Data Explorer** screen, click on the button **New Stored Procedure**.
 
     > **Note**: A New Stored Procedure screen appears which shows a sample stored procedure .
 
@@ -286,8 +286,8 @@ The main tasks for this exercise are as follows:
                 context.getResponse().setBody(documentCreated)
             });
         if (!accepted) return;
-}
-    ```
+    }
+        ```
 
 1. In the New Stored Procedure screen, click **Save**.
 
@@ -310,7 +310,7 @@ The following result is returned
     }
     ```
 
-1. In the Azure portal, in the **documents** screen, click on the drop down button **New Stored Procedure** and click **New UDF** .
+1. In the Azure portal, in the **Data Explorer** screen, click on the drop down button **New Stored Procedure** and click **New UDF** .
 
     > **Note**: A New UDF 1 screen appears which shows **function userDefinedFunction(){}**
 
