@@ -62,12 +62,13 @@ The main task for this exercise are as follows:
     - Database name: **DeptDatabasesxx**, where **xx** are your initials.
 
     - Server: Create a new server with the following settings and click on **Select**:
-        - Server name: **SQLServicexx**, where **xx** are your initials
+        - Server name: **sqlservicexx**, where **xx** are your initials
         - Server admin login: **xxsqladmin**, where **xx** are your initials
         - Password: **P@ssw0rd**
         - Confirm Password: **P@ssw0rd**
         - Location: choose a **location** near to you.
         - Allow Azure services to access server: **checked**
+        - Click **Create**
 
     - Click on **Additional settings** tab, under **Data Source**, click on **Sample**.
 
@@ -109,15 +110,16 @@ The main tasks for this exercise are as follows:
 
     - Resource group name: **awrgstudxx**, where **xx** are your initials.
 
-    - Select Source: **Sample**
-
     - Select Sample: **AdventureWorksDW**
 
     - Server: **SQLServicexx**
 
     - Performance Level: **Gen1 DW200**
+       > **Note**: If the datacenter you chose does not allow Gen1, simply choose a Gen 2. 
 
-1. In the **SQL Data Warehouse*** blade, click **Create**.
+    - Click on **Additional settings** tab, under **Data Source**, click on **Sample**.
+
+1. In the **SQL Data Warehouse*** blade, click **Review & Create**, click **Create**.
 
    > **Note**: The provision will takes approximately 7 minutes.
 
@@ -183,7 +185,7 @@ The main tasks for this exercise are as follows:
     ,	MAXSIZE 			= 1024 GB
     );
     ```
-
+    > **Note**: If you chose a Gen 2 database change SERVICE_OBJECTIVE 	= 'DW100' to SERVICE_OBJECTIVE 	= 'DW100c'
     > **Note**: The creation of the database takes approximately 2 minutes.
 
 1. In the **awdlsstudxx** blade, click on **Access keys**, and then clilck on the copy icon next to the **Storage account name** and paste it into Notepad.

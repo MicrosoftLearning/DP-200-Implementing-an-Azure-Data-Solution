@@ -229,7 +229,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 5: Specify the a Stream Analytics job input.
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **awdlsstudxx**, where **xx** are your initials
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**,  where **xx** are your initials
 
 1. Click on **socialtwitter-asa-job**.
 

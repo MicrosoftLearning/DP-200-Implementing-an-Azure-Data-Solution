@@ -95,7 +95,9 @@ The main tasks for this exercise are as follows:
     - **Resource group**: awrgstudxx
     - **Version**: V2
     - **Location**: select the location closest to you
+    - Untick **Enable Git**
     - Leave other options to their default settings
+    - Click **Create**
 
     > **Note**: The creation of the Data Factory takes approximately 1 minute.
 
