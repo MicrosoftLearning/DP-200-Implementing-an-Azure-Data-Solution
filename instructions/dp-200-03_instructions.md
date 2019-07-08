@@ -161,7 +161,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Confirm the creation of the Databricks cluster
 
-1. Return back to Microsoft Edge, under **Interaction Clusters** confirm that the State is set to Running for the cluster named **awdbclstudxx**, where **xx** are your initials.
+1. Return back to Microsoft Edge, under **Interactive Clusters** confirm that the State is set to Running for the cluster named **awdbclstudxx**, where **xx** are your initials.
 
 ### Task 2: Collect the Azure Data Lake Store Gen II account name
 
