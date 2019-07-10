@@ -541,7 +541,7 @@ The main tasks for this exercise are as follows:
 
         await this.client.CreateDatabaseIfNotExistsAsync(new Database { Id = "Users" });
 
-        await this.client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri("Users"), new DocumentCollection { Id = "WebCustomers" });
+        await this.client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri("Users"), new DocumentCollection { Id = "WebCustomers", PartitionKey = new PartitionKeyDefinition { Paths = new System.Collections.ObjectModel.Collection<string> { "/userId" }} }); 
 
         Console.WriteLine("Database and collection validation complete");
     }
