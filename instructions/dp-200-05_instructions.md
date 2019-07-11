@@ -472,7 +472,7 @@ The main tasks for this exercise are as follows:
 
     ```scala
     //SQL Data Warehouse related settings
-    val dwDatabase = "DBDW"
+    val dwDatabase = "DWDB"
     val dwServer = "sqlservicexx.database.windows.net"
     val dwUser = "xxsqladmin"
     val dwPass = "P@Ssw0rd"
