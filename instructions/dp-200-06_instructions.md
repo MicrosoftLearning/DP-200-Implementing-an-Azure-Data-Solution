@@ -238,7 +238,7 @@ The main tasks for this exercise are as follows:
 1. In the **Inputs** screen, click **+ Add stream input**, and then click **Event Hubs**.
 
 1. In the Event Hub screen, type in the following values and click the **Save** button.
-    - **Input alias**: Enter a name for this job input as TwitterStream.
+    - **Input alias**: TwitterStream.
     - **Select Event Hub from your subscriptions**: checked
     - **Subscription**: Your subscription name
     - **Event Hub Namespace**: xx-socialtwitter-eh
@@ -322,7 +322,7 @@ The main tasks for this exercise are as follows:
     ,[created_at]
     ,[Author]
     ,[text]
-    INTO [Outputs]
+    INTO [Output]
     FROM [TwitterStream]
     ```
 
