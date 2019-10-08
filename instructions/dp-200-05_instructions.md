@@ -26,7 +26,7 @@ You are the senior data engineer at AdventureWorks, and you are working with you
 
 You will then provision a SQL Data Warehouse and test that the provisioning of the server is successful by testing a sample database with a series of queries. You will then use PolyBase to load dimension tables from Azure Blob and Azure Databricks to test that the integration of these data platform technologies with Azure SQL Data Warehouse.
 
-At the end of this lad, you will have:
+At the end of this lab, you will have:
 
 1. Use Azure SQL Database
 1. Describe Azure Data Warehouse
@@ -62,7 +62,7 @@ The main task for this exercise are as follows:
     - Database name: In **Additional setting** tab, under data source, click **Sample** . The AdventureworksLT sample database is selected automatically.
 
     - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-        - Server name: **SQLServicexx**, where **xx** are your initials
+        - Server name: **sqlervicexx**, where **xx** are your initials
         - Server admin login: **xxsqladmin**, where **xx** are your initials
         - Password: **Pa55w.rd**
         - Confirm Password: **Pa55w.rd**
