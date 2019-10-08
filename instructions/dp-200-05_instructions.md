@@ -163,7 +163,7 @@ The main tasks for this exercise are as follows:
     - Server Name: **sqlservicexx.database.windows.net**
     - Authentication: **SQL Server Authentication**
     - Username: **xxsqladmin**
-    - Password: **P@ssw0rd**
+    - Password: **Pa55w.rd**
 
 1. In the **Connect to Server** dialog box, click **Connect** 
 
