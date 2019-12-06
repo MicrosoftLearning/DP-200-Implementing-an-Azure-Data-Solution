@@ -190,7 +190,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in Object Explorer, right click **sqlservicexx.database.windows.net** and click on **New Query**.
 
-    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
+    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table. Make sure, when you execute it, to change the context to the DWDB database, otherwise you will get errors when executing. 
 
 1. Create a table named **dbo.Users** with a **clustered columnstore** index with a distribution of **replicate** with the following columns:
 
@@ -203,7 +203,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, click on **Execute**.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **sqlservicexx.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, right click **sqlservicexx.database.windows.net** and click on **New Query**. Change the execution context for the Query to DWDB database.
 
 1. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **round robin** with the following columns:
 
@@ -222,7 +222,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, click on **Execute**.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **sqlservicexx.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, right click **sqlservicexx.database.windows.net** and click on **New Query**. Change the execution context for the Query to DWDB database.
 
 1. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
 
