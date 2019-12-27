@@ -225,8 +225,6 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure Active Directory blade, click **Properties**.
 
-1. Click on the Copy icon next to the **Directory ID** to get your tenant ID and paste this into notepad.
-
 1. Save the notepad document in the folder **Allfiles\Labfiles\Starter\DP-200.3** as **DatabricksDetails.txt**
 
 ### Task 4: Create a Databricks Notebook and connect to a Data Lake Store.
