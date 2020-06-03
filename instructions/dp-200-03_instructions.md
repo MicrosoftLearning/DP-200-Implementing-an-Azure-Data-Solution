@@ -205,6 +205,8 @@ The main tasks for this exercise are as follows:
 
 1. Copy the **Application key value** and paste it into Notepad
 
+1. Save the notepad document in the folder **Allfiles\Labfiles\Starter\DP-200.3** as **DatabricksDetails.txt**
+
 1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Home** hyperlink, and then the **Resource groups** icon, click on the resource group **awrgstudxx**, where **xx** are your initials.
 
 1. In the **awrgstudxx** screen, click on **Access Control (IAM)** 
@@ -222,12 +224,6 @@ The main tasks for this exercise are as follows:
 1. Click **Users**, and then click **User settings** in the **Users - All users** blade, Check the **App registrations** setting. This value can only be set by an administrator. If set to Yes, any user in the Azure AD tenant can register an app. 
 
 1. Close down the **Users - All users** screen.
-
-1. In the Azure Active Directory blade, click **Properties**.
-
-1. Click on the Copy icon next to the **Directory ID** to get your tenant ID and paste this into notepad.
-
-1. Save the notepad document in the folder **Allfiles\Labfiles\Starter\DP-200.3** as **DatabricksDetails.txt**
 
 ### Task 4: Create a Databricks Notebook and connect to a Data Lake Store.
 
@@ -259,7 +255,7 @@ The main tasks for this exercise are as follows:
     spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account-name>.dfs.core.windows.net", "https://login.microsoftonline.com/<tenant-id>/oauth2/token")
     ```
 
-1. In this code block, replace the **application-id**, **authentication-id**, **tenant-id**, **file-system-name** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
+1. In this code block, replace the **application-id**, **authentication-id**, **tenant-id** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
 
 1. In the Notebook, in the cell under **Cmd 1**, click on the **Run** icon and click on **Run Cell** as highlighted in the following graphic. 
 
