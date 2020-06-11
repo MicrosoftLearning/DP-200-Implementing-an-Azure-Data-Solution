@@ -89,7 +89,7 @@ The main tasks for this exercise are as follows:
 
     - **Resource group location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
-      > **Note**: To identify Azure regions available in your subscription, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
+        > **Note**: To identify Azure regions available in your subscription, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
         ![Creating a Resource Group in the Azure portal](Linked_Image_Files/M02-E02-T01-img01.png)
 
@@ -266,7 +266,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **New Containers** screen, click **OK**.
 
-   > **Note**: The creation of the file system is immediate and will appear in the list of the **awdlsstudxx - Containers** screen as follows.
+    > **Note**: The creation of the file system is immediate and will appear in the list of the **awdlsstudxx - Containers** screen as follows.
 
     ![File Systems listed in the Azure portal](Linked_Image_Files/M02-E03-T02-img01.png)
 
@@ -354,7 +354,7 @@ The main task for this exercise are as follows:
 
 1. Repeat the steps to upload the preferences.JSON file from the **Labfiles\Starter\DP-200.2\logs** folder to the **data** file system in the Data Lake Store gen2
 
-   > **Note**: The upload of the files will take approximately 5 seconds. You will see a message in Azure Storage Explorer that states **Your view may be out of data. Do you want to refresh? Click Yes**. Once completed, all two files will appear in a list in the upload blobs screen.
+    > **Note**: The upload of the files will take approximately 5 seconds. You will see a message in Azure Storage Explorer that states **Your view may be out of data. Do you want to refresh? Click Yes**. Once completed, all two files will appear in a list in the upload blobs screen.
 
     ![Files uploaded to Containers in Azure Storage Explore](Linked_Image_Files/M02-E04-T02-img02.png)
 
