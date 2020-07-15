@@ -105,7 +105,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, click on the **+ Create a resource** icon.
 
-1. In the New screen, click in the **Search the Marketplace** text box, and type the word **storage acount**. Click **Storage account - blob, file, table, queue** in the list that appears.
+1. In the New screen, click in the **Search the Marketplace** text box, and type the word **storage account**. Click **Storage account - blob, file, table, queue** in the list that appears.
 
 1. In the **Storage account** screen, click **Create**.
 
