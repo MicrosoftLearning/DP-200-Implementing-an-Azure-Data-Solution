@@ -43,13 +43,13 @@ The main task for this exercise is as follows:
 
 1. From the case study, identify the data requirements of AdventureWorks and identify if the data structure for the requirement is structured, semi-structured or unstructured.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Identify the data requirements and structures of AdventureWorks.
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab01-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.1** folder.
 
-1. As a group, spend **10 minutes** discussing and listing the data requirements and data structure that your group has identified within the case study document.
+2. As a group, spend **10 minutes** discussing and listing the data requirements and data structure that your group has identified within the case study document.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -67,13 +67,13 @@ The main task for this exercise are as follows:
 
 1. Determine the data platform technology that delivers the identified data requirements.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Determine the data platform technology that delivers the identified data requirements
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab01-Ex02.docx** from the **Allfiles\Labfiles\Starter\DP-200.1** folder.
 
-1. As a group, spend **10 minutes** discussing and listing the data platform technologies against a given data requirement that your group has identified within the case study document.
+2. As a group, spend **10 minutes** discussing and listing the data platform technologies against a given data requirement that your group has identified within the case study document.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -91,13 +91,13 @@ The main task for this exercise are as follows:
 
 1. Select one of the requirements and determine the high-level tasks that will perform to meet the data requirement selected.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Determine the high-level tasks that you think you will perform to meet the data requirement.
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab01-Ex03.docx** from the **Allfiles\Labfiles\Starter\DP-200.1** folder.
 
-1. Individually, spend **10 minutes** listing the high-level tasks that you think you will perform to meet the data requirement you have selected.
+2. Individually, spend **10 minutes** listing the high-level tasks that you think you will perform to meet the data requirement you have selected.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -115,13 +115,13 @@ The main task for this exercise are as follows:
 
 1. Finalize the data engineering deliverables for AdventureWorks
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Finalize the data engineering deliverables for AdventureWorks
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab01-Ex04.docx** from the **Allfiles\Labfiles\Starter\DP-200.1** folder.
 
-1. Individually, spend **10 minutes** listing the data engineering deliverables for AdventureWorks as reflected by the next five modules of this course.
+2. Individually, spend **10 minutes** listing the data engineering deliverables for AdventureWorks as reflected by the next five modules of this course.
 
 ### Task 2: Discuss the findings with the Instructor
 

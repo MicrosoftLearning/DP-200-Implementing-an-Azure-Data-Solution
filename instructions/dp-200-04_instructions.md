@@ -16,8 +16,8 @@ The students will be able to describe and demonstrate the capabilities that Azur
 After completing this lab, you will be able to:
 
 1. Create an Azure Cosmos DB database built to scale
-1. Insert and query data in your Azure Cosmos DB database
-1. Distribute your data globally with Azure Cosmos DB
+2. Insert and query data in your Azure Cosmos DB database
+3. Distribute your data globally with Azure Cosmos DB
 
 ## Scenario
   
@@ -28,8 +28,8 @@ The Information Services department want to understand how the service can be se
 At the end of this lab, you will:
 
 1. Created an Azure Cosmos DB database built to scale
-1. Inserted and queried data in your Azure Cosmos DB database
-1. Distributed your data globally with Azure Cosmos DB
+2. Inserted and queried data in your Azure Cosmos DB database
+3. Distributed your data globally with Azure Cosmos DB
 
 > **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
@@ -47,13 +47,13 @@ The main task for this exercise are as follows:
 
 1. In the Azure portal, if neccesary click on the **Home** hyperlink.
 
-1. Navigate to the **+ Create a resource** icon.
+2. Navigate to the **+ Create a resource** icon.
 
-1. In the New screen, click in the **Search the Marketplace** text box, and type the word **Cosmos**. Click **Azure Cosmos DB** in the list that appears.
+3. In the New screen, click in the **Search the Marketplace** text box, and type the word **Cosmos**. Click **Azure Cosmos DB** in the list that appears.
 
-1. In the **Azure Cosmos DB** screen, click **Create**.
+4. In the **Azure Cosmos DB** screen, click **Create**.
 
-1. From the **Create Azure Cosmos DB Account** screen, create an Azure Cosmos DB Account with the following settings:
+5. From the **Create Azure Cosmos DB Account** screen, create an Azure Cosmos DB Account with the following settings:
 
     - In the Project details of the screen, type in the following information
     
@@ -75,13 +75,13 @@ The main task for this exercise are as follows:
 
             ![Creating Azure Cosmos DB in the Azure portal](Linked_Image_Files/M04-E01-T01-img01.png)
 
-1. In the **Create Azure Cosmos DB Account** blade, click **Review + create**.
+6. In the **Create Azure Cosmos DB Account** blade, click **Review + create**.
 
-1. After the validation of the **Create Azure Cosmos DB Account** blade, click **Create**.
+7. After the validation of the **Create Azure Cosmos DB Account** blade, click **Create**.
 
    > **Note**: The provision will takes approximately 5 minutes. What is often avoided in these labs is a description of the additional tabs when you provision any service in Azure. You may notice that in the provisioning screen there will be additional tabs such as Network, Tags or Advanced. This enables you to define any customized settings for a service. For example, the network tab of many services enables you to define the configuration of virtual networks, so that you are able to control and secure the network traffic against a given data service. The Tags option  are name/value pairs that enable you to categorize resources and view consolidated billing by applying the same tag to multiple resources and resource groups. Advanced tabs will vary dependant on the service that has it. But it is important to note that you have control over these areas and you wil want to collaborate with your Network admins or indeed your finance department to see how these options should be configured.
 
-1. When the provisioning is complete, the "Your deployment is complete" screen appears, click on **Go to resource** and move onto the next exercise. 
+8. When the provisioning is complete, the "Your deployment is complete" screen appears, click on **Go to resource** and move onto the next exercise. 
 
 >**Result** In this exercise, you have provisioned an Azure Cosmos DB Account
 
@@ -95,21 +95,21 @@ The main tasks for this exercise are as follows:
 
 1. Setup your Azure Cosmos DB database and container 
 
-1. Add data using the portal
+2. Add data using the portal
 
-1. Run queries in the Azure portal
+3. Run queries in the Azure portal
 
-1. Run complex operations on your data
+4. Run complex operations on your data
 
 ### Task 1: Setup your Azure Cosmos DB container and database
 
 1. In the Azure portal, once the deployment of Cosmos DB is completed, click on the **Go to resources** button.
 
-1. In the Cosmos DB screen,  click on the **Overview** link.
+2. In the Cosmos DB screen,  click on the **Overview** link.
 
-1. In the **awcdbstudxx** screen, click **+ Add Container**. This opens up the **awcdbstudxx Data Explorer** screen with the **Add Container** blade.
+3. In the **awcdbstudxx** screen, click **+ Add Container**. This opens up the **awcdbstudxx Data Explorer** screen with the **Add Container** blade.
 
-1. In the **Add Container** blade, create a Products database with a container named Clothing with the following settings:
+4. In the **Add Container** blade, create a Products database with a container named Clothing with the following settings:
 
     - **Database id**: **Products**
     
@@ -123,17 +123,17 @@ The main tasks for this exercise are as follows:
 
         ![Adding a Container in Azure Cosmos DB in the Azure portal](Linked_Image_Files/M04-E02-T01-img01.png)
 
-1. In the **Add Container** screen, click **OK**
+5. In the **Add Container** screen, click **OK**
 
 ### Task 2: Add data using the portal
 
 1. In the **awcdbstudcto - Data Explorer** screen, on the Data Explorer toolbar, opposite the button for New Container, click on the **Open Full Screen** button. In the Open Full Screen dialog box, click **Open**. A new tab opens up in Microsoft Edge.
 
-1. In the **SQL API** pane, click in the refresh icon, and then expand **Products**, followed by **Clothing** and click on **Items**. 
+2. In the **SQL API** pane, click in the refresh icon, and then expand **Products**, followed by **Clothing** and click on **Items**. 
 
-1. In the Documents pane, click on the icon for **New Item**. A new document appears with a sample JSON that you will now replace.
+3. In the Documents pane, click on the icon for **New Item**. A new document appears with a sample JSON that you will now replace.
 
-1. Copy the following code and paste it into the **Documents** tab:
+4. Copy the following code and paste it into the **Documents** tab:
 
     ```JSON
     {
@@ -156,11 +156,11 @@ The main tasks for this exercise are as follows:
 
     ![Adding data into Cosmos DB using Data Explorer in the Azure portal](Linked_Image_Files/M04-E02-T02-img01.png)
 
-1. Once you've added the JSON to the Documents tab, click **Save**.
+5. Once you've added the JSON to the Documents tab, click **Save**.
 
-1. In the Documents pane, click on the icon for **New Item**.
+6. In the Documents pane, click on the icon for **New Item**.
 
-1. Copy the following code and paste it into the **Items** tab:
+7. Copy the following code and paste it into the **Items** tab:
 
     ```JSON
     {
@@ -183,17 +183,17 @@ The main tasks for this exercise are as follows:
 
     ![Adding data into Cosmos DB using Data Explorer in the Azure portal](Linked_Image_Files/M04-E02-T02-img02.png)
 
-1. Once you've added the JSON to the Documents tab, click **Save**.
+7. Once you've added the JSON to the Documents tab, click **Save**.
 
-1. You can see each document that has been saved by clicking each document on the left-hand menu. The first item with id of 1, will have a value of **33218896**, which is named after the productid, the second item will be **33218897**
+8. You can see each document that has been saved by clicking each document on the left-hand menu. The first item with id of 1, will have a value of **33218896**, which is named after the productid, the second item will be **33218897**
 
 ### Task 3: Run queries in the Azure portal.
 
-1. In the Azure portal, in the **Items** screen, click on the button **New SQL Query** that is above the **SQL API** Blade, above the **refresh** icon.
+1. In the Edge browser that opened, in the data explorer, in the **Items** screen, click on the button **New SQL Query** that is above the **SQL API** Blade, above the **refresh** icon.
 
     > **Note**: A Query 1 screen tab appears which shows the query **SELECT * FROM c** .
 
-1. Replace the query that returns a JSON file showing details for productId 1.
+2. Replace the query that returns a JSON file showing details for productId 1.
 
     ```SQL
     SELECT *
@@ -201,7 +201,7 @@ The main tasks for this exercise are as follows:
     WHERE p.id ="1"
     ```
 
-1. Click on the **Execute Query** icon. The following result is returned
+3. Click on the **Execute Query** icon. The following result is returned
 
     ```JSON
     [
@@ -231,7 +231,7 @@ The main tasks for this exercise are as follows:
 
     ![Querying data in Cosmos DB using Data Explorer in the Azure portal](Linked_Image_Files/M04-E03-T02-img01.png)
 
-1. In the existing query window. Write a query that returns the id, manufacturer and description in a JSON file for productId 
+4. In the existing query window, replace the previous query and write a query that returns the id, manufacturer and description in a JSON file for productId 
 
     ```SQL
     SELECT
@@ -242,7 +242,7 @@ The main tasks for this exercise are as follows:
     WHERE p.id ="1"
     ```
 
-1. Click on the **Execute Query** icon. The following result is returned
+5. Click on the **Execute Query** icon. The following result is returned
 
     ```JSON
     [
@@ -256,7 +256,7 @@ The main tasks for this exercise are as follows:
 
     ![Querying data in Cosmos DB using Data Explorer in the Azure portal](Linked_Image_Files/M04-E03-T02-img02.png)
 
-1. In the existing query window, write a query that returns returns the price, description, and product ID for all products, ordered by price, in ascending order.
+6. In the existing query window, replace the previous query and write a query that returns returns the price, description, and product ID for all products, ordered by price, in ascending order.
 
     ```SQL
     SELECT p.price, p.description, p.productId
@@ -264,7 +264,7 @@ The main tasks for this exercise are as follows:
     ORDER BY p.price ASC
     ```
 
-1. Click on the **Execute Query** icon. The following result is returned
+7. Click on the **Execute Query** icon. The following result is returned
 
     ```JSON
     [
@@ -285,13 +285,13 @@ The main tasks for this exercise are as follows:
 
 ### Task 4: Run complex operations on your data
 
-1. In the Azure portal, in the **Items** screen, click on the button **New Stored Procedure**.
+1. In the Edge browser that opened, in the data explorer, in the **Items** screen, click on the button **New Stored Procedure**, which you can find next to the button of open query.
 
     > **Note**: A New Stored Procedure screen appears which shows a sample stored procedure .
 
-1. In the New Stored Procedure screen, in the **Stored Procedure Id** text box, type **createMyDocument**.
+2. In the New Stored Procedure screen, in the **Stored Procedure Id** text box, type **createMyDocument**.
 
-1. Use the following code to create a stored procedure in the Stored Procedure Body.
+3. Use the following code to create a stored procedure in the Stored Procedure Body.
 
     ```Javascript
     function createMyDocument() {
@@ -315,11 +315,15 @@ The main tasks for this exercise are as follows:
     }
     ```
 
-1. In the New Stored Procedure screen, click **Save**.
+4. In the New Stored Procedure screen, click **Save**.
 
-1. In the New Stored Procedure screen, click **Execute**.
+5. In the New Stored Procedure screen, click **Execute**.
 
-1. In the Input Parameters screen, **type** should be set to **string**, and **value** set to  **33218898** in the **Partition Key Value** text box, and then click **Execute**.
+6. In the Input Parameters screen, set the **Partition Key Value**, **Type** to **String**, and **Value** to  **33218898**, leave the other settings the same, and then click **Execute**.
+
+See below:
+
+![Input Parameter Screen in the Azure portal](Linked_Image_Files/M04-E03-T04-img01.png)
 
 The following result is returned
 
@@ -336,13 +340,13 @@ The following result is returned
     }
     ```
 
-1. In the Azure portal, in the Data Explorer full screen, click on the drop down button for **New Stored Procedure** and click **New UDF** .
+7. In the Edge browser that opened, in the data explorer, click on the drop down button for **New Stored Procedure** and click **New UDF** .
 
     > **Note**: A New UDF 1 screen appears which shows **function userDefinedFunction(){}**
 
-1. In the New Defined Function screen, in the **User Defined Function Id** text box, type **producttax**.
+8. In the New Defined Function screen, in the **User Defined Function Id** text box, type **producttax**.
 
-1. Use the following code to create a user defined function in the user defined function Body.
+9. Use the following code to create a user defined function in the user defined function Body.
 
     ```Javascript
     function producttax(price) {
@@ -360,15 +364,15 @@ The following result is returned
     }
     ```
 
-1. In the New UDF 1 screen, click **Save**.
+10. In the New UDF 1 screen, click **Save**.
 
-1. Click on the Query 1 tab, and replace the existing query with the following query:
+11. Click on the Query 1 tab, and replace the existing query with the following query:
 
     ```SQL
     SELECT c.id, c.productId, c.price, udf.producttax(c.price) AS producttax FROM c
     ```
 
-1. In the Query 1 screen, click **Execute Query**.
+12. In the Query 1 screen, click **Execute Query**.
 
 The following result is returned
 
@@ -405,19 +409,15 @@ The main tasks for this exercise are as follows:
 
 1. Replicate Data to Multiple Regions
 
-1. Managing Failover
+2. Managing Failover
 
 ### Task 1: Replicate Data to Multiple Regions
 
-1. In Microsoft Edge, click on the tab that states **awcdbstudxx - Data Explorer..**.
-
-1. If a message appears that states "Connection error", click on the button **Refresh**.
-
-1. In the **awcdbstudxx - Data Explorer** window, in the blade,  click on **Replicate data globally**.
+1. In the Azure Portal navigate to the Cosmos DB resource **awcdbstudxx** window, in the blade **Settings**,  click on **Replicate data globally**.
 
     ![Global replication of Cosmos DB in the Azure portal](Linked_Image_Files/M04-E03-T01-img01.png)
 
-1. On the world map, single click a data center location within the continent you reside, and click on **Save**.
+2. On the world map, single click a data center location within the continent you reside, and click on **Save**.
 
 >**Note**  The provisioning of the additional data centers will take approximately 7 minutes
 
@@ -425,15 +425,15 @@ The main tasks for this exercise are as follows:
 
 1. In the **awcdbstudxx - Replicate data globally** window, click on **Manual Failover**.
 
-1. Click on the **Read Region** datacenter location, then click on the check box next to "I understand and agree to trigger a failover on my current Write Region.", and then click on **OK**.
+2. Click on the **Read Region** datacenter location, then click on the check box next to "I understand and agree to trigger a failover on my current Write Region.", and then click on **OK**.
 
 >**Note**  The Manual Failover will take approximately 3 minutes. The screen will look as follows. Note the icon colors have changed
 
 ![Manual Failover of Cosmos DB in the Azure portal](Linked_Image_Files/M04-E03-T02-img1.png)
 
-1. In the **awcdbstudxx - Replicate data globally** window, click on **Automatic Failover**
+3. In the **awcdbstudxx - Replicate data globally** window, click on **Automatic Failover**
 
-1. In the "Automatic Failover" screen, click on the **ON** button, and then click on **OK**.
+4. In the "Automatic Failover" screen, click on the **ON** button, and then click on **OK**.
 
 >**Note**  The provisioning of the Automatic Failover will take approximately 3 minutes.
 

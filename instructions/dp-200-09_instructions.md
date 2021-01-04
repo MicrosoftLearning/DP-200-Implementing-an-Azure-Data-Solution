@@ -16,9 +16,9 @@ The students will be able to define a broad monitoring solution that can help th
 After completing this lab, you will be able to:
 
 1. Explain the monitoring capabilities that are available
-1. Troubleshoot common data storage issues
-1. Troubleshoot common data processing issues
-1. Manage disaster recovery
+2. Troubleshoot common data storage issues
+3. Troubleshoot common data processing issues
+4. Manage disaster recovery
 
 ## Scenario
   
@@ -31,9 +31,9 @@ There are concerns around the recovery of the Products database that is stored i
 At the end of this lad, you will have:
 
 1. Explained the monitoring capabilities that are available
-1. Troubleshoot common data storage issues
-1. Troubleshoot common data processing issues
-1. Managed disaster recovery
+2. Troubleshoot common data storage issues
+3. Troubleshoot common data processing issues
+4. Managed disaster recovery
 
 ## Exercise 0: Issue review
 
@@ -49,13 +49,13 @@ The main task for this exercise are as follows:
 
 1. Defining a corporate monitoring approach.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Defining a corporate monitoring approach.
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab09-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.** folder.
 
-1. Spend **10 minutes** in a group discussing and identifying the monitoring tools that would be the most useful tool for you within your organization. Find two examples and outline your justification.
+2. Spend **10 minutes** in a group discussing and identifying the monitoring tools that would be the most useful tool for you within your organization. Find two examples and outline your justification.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -73,15 +73,15 @@ The main tasks for this exercise are as follows:
 
 1. Assessing issues that are data storage issues.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Assessing Data and Storage Security Hygiene.
 
 1. In the **\Labfiles\DP-200-Issues-Doc.docx**_document, share your findings and work with the group to identify which of the issues are data storage issues.
 
-1. Work with the group to see if there are **common data storage issue** that the group experienced while setting up the various data platforms.
+2. Work with the group to see if there are **common data storage issue** that the group experienced while setting up the various data platforms.
 
-1. As a group select two data storage issues that you have identified, and log them into the document **DP-200-Lab09-Ex02.docx**.
+3. As a group select two data storage issues that you have identified, and log them into the document **DP-200-Lab09-Ex02.docx**.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -99,15 +99,15 @@ The main tasks for this exercise are as follows:
 
 1. Assessing issues that are data processing issues.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Assessing Data and Storage Security Hygiene.
 
 1. Review with the Group the questions outlined in **DP-200-Lab09-Ex03.docx**
 
-1. Work with the group to see if there are **common data processing issues** that the group experienced while setting up the various data platforms.
+2. Work with the group to see if there are **common data processing issues** that the group experienced while setting up the various data platforms.
 
-1. As a group select two data storage issues that you have identified, and log them into the document **DP-200-Lab09-Ex03.docx**.
+3. As a group select two data storage issues that you have identified, and log them into the document **DP-200-Lab09-Ex03.docx**.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -125,13 +125,13 @@ The main tasks for this exercise are as follows:
 
 1. Manage Disaster Recovery.
 
-1. The instructor will discuss the findings with the group.
+2. The instructor will discuss the findings with the group.
 
 ### Task 1: Manage Disaster Recovery
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab09-Ex04.docx** from the **Allfiles\Labfiles\Starter\DP-200.9** folder.
 
-1. As a group, spend **10 minutes** discussing and listing the data requirements and data structure that your group has identified within the case study document.
+2. As a group, spend **10 minutes** discussing and listing the data requirements and data structure that your group has identified within the case study document.
 
 ### Task 2: Discuss the findings with the Instructor
 
